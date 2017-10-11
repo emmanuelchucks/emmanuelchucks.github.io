@@ -9,7 +9,7 @@ $(function() {
     $(form).submit(function(event) {
     // Stop the browser from submitting the form.
         event.preventDefault();
-        $("#submit-btn").addClass("fade-blue").text("Sending...");
+        $("#submit-btn").addClass("fade-blue").val("Sending...");
 
         // Serialize the form data.
         var formData = $(form).serialize();
@@ -25,7 +25,7 @@ $(function() {
                 // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass("alert-danger");
                 $(formMessages).addClass("alert-success");
-                $("#submit-btn").removeClass("fade-blue").text("Send message");
+                $("#submit-btn").removeClass("fade-blue").val("Send message");
 
                 // Set the message text.
                 $(formMessages).text("Thanks for your message! I will reply shortly.");
