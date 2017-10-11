@@ -1,8 +1,12 @@
 /* your styles go here */
-.fade-blue, 
+.fade-blue,
 .fade-blue:hover,
 .fade-blue:focus,
 .fade-blue:active {
     background-color: #95c7ec;
     border-color: #95c7ec;
+}
+
+.about-pic {
+    margin: 65px auto;
 }

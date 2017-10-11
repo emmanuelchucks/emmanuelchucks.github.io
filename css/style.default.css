@@ -19,7 +19,7 @@ html {
 }
 body {
   height: 100%;
-  font-weight: 300;
+  font-weight: normal;
 }
 header {
   z-index: 1000;
@@ -234,7 +234,7 @@ ABOUT
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #999999;
-  font-size: 12px;
+  font-size: 0.7em;
 }
 .progress-bar-skill1 {
   background-color: #d1d1d1;
@@ -385,7 +385,7 @@ a:active {
   background: #282c37;
   color: #ccc;
   padding: 20px 0;
-  font-size: 14px;
+  font-size: 0.8em;
   line-height: 28px;
 }
 .footer__copyright p {
@@ -824,7 +824,8 @@ STYLE SWITCHER FOR DEMO
 /* scaffolding */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-size: 2em;
+  font-weight: normal;
   line-height: 1.55;
   color: #000000;
   background-color: #ffffff;
@@ -865,7 +866,7 @@ hr {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 14px;
+  font-size: 0.5em;
   line-height: 24px;
   text-align: center;
   -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
@@ -904,7 +905,7 @@ hr {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 6px 12px;
-  font-size: 16px;
+  font-size: 0.8em;
   line-height: 1.55;
   border-radius: 0;
 }
@@ -1007,19 +1008,19 @@ fieldset[disabled] .btn-transparent.active {
 }
 .btn-lg {
   padding: 10px 16px;
-  font-size: 20px;
+  font-size: 1em;
   line-height: 1.33;
   border-radius: 0;
 }
 .btn-sm {
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 0.8em;
   line-height: 1.5;
   border-radius: 0;
 }
 .btn-xs {
   padding: 1px 5px;
-  font-size: 14px;
+  font-size: 0.8em;
   line-height: 1.5;
   border-radius: 0;
 }
@@ -1042,7 +1043,7 @@ label {
   width: 100%;
   height: 38px;
   padding: 6px 12px;
-  font-size: 16px;
+  font-size: 0.8em;
   line-height: 1.55;
   color: #555555;
   background-color: #ffffff;
@@ -1078,7 +1079,7 @@ label {
   padding-top: 24px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 14px;
+  font-size: 0.8em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
 }
@@ -1380,7 +1381,7 @@ p.social a {
   height: 40px;
   border-radius: 20px;
   line-height: 40px;
-  font-size: 15px;
+  font-size: 1em;
   text-align: center;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
