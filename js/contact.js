@@ -11,9 +11,6 @@ $(function() {
         event.preventDefault();
         $("#submit-btn").addClass("fade-blue").val("Sending...");
 
-        // Serialize the form data.
-        var formData = $(form).serialize();
-
         // Submit the form using AJAX.
         $.ajax({
             url: "https://formspree.io/echucks19@gmail.com",
