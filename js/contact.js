@@ -5,11 +5,13 @@ $(function() {
     // Get the messages div.
     var formMessages = $("#form-messages");
 
-    // TODO: The rest of the code will go here...
+    $("#submit-btn").click(function(event){
+        addClass("fade-blue").val("Sending...");
+    });
+
     $(form).submit(function(event) {
     // Stop the browser from submitting the form.
         event.preventDefault();
-        $("#submit-btn").addClass("fade-blue").text("Sending...");
 
         // Serialize the form data.
         var formData = new FormData(myForm),
@@ -32,7 +34,7 @@ $(function() {
                 // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass("alert-danger");
                 $(formMessages).addClass("alert-success");
-                $("#submit-btn").removeClass("fade-blue").text("Send message");
+                $("#submit-btn").removeClass("fade-blue").val("Send message");
 
                 // Set the message text.
                 $(formMessages).text("Thanks for your message! I will reply shortly.");
