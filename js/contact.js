@@ -11,6 +11,8 @@ $(function() {
         event.preventDefault();
         $("#submit-btn").addClass("fade-blue").val("Sending...");
 
+        var formData = $(form).serialize();
+
         // Submit the form using AJAX.
         $.ajax({
             url: "https://formspree.io/echucks19@gmail.com",
@@ -37,6 +39,7 @@ $(function() {
                 // Make sure that the formMessages div has the 'error' class.
                 $(formMessages).removeClass("alert-success");
                 $(formMessages).addClass("alert-danger");
+                $("#submit-btn").val("Sending failed...");
 
                 // Set the message text.
                 if (data.responseText !== "") {
