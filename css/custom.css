@@ -10,3 +10,18 @@
 .about-pic {
     margin: 65px auto;
 }
+
+#about img {
+    width: 357px;
+    height: 357px;
+}
+
+#portfolio img {
+    width: 1200px;
+    max-height: 547px;
+}
+
+#customers img {
+    width: 167px;
+    height: 167px;
+}
