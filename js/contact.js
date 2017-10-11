@@ -5,36 +5,27 @@ $(function() {
     // Get the messages div.
     var formMessages = $("#form-messages");
 
-    $("#submit-btn").click(function(event){
-        addClass("fade-blue").val("Sending...");
-    });
-
+    // TODO: The rest of the code will go here...
     $(form).submit(function(event) {
     // Stop the browser from submitting the form.
         event.preventDefault();
+        $("#submit-btn").addClass("fade-blue").text("Sending...");
 
         // Serialize the form data.
-        var formData = new FormData(myForm),
-        result = {};
-
-    for (var entry of formData.entries())
-    {
-        result[entry[0]] = entry[1];
-    }
-    result = JSON.stringify(result);
+        var formData = $(form).serialize();
 
         // Submit the form using AJAX.
         $.ajax({
             url: "https://formspree.io/echucks19@gmail.com",
             method: "POST",
-            data: result,
+            data: JSON.stringify(formData),
             dataType: "json"
         })
             .done(function(response) {
                 // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass("alert-danger");
                 $(formMessages).addClass("alert-success");
-                $("#submit-btn").removeClass("fade-blue").val("Send message");
+                $("#submit-btn").removeClass("fade-blue").text("Send message");
 
                 // Set the message text.
                 $(formMessages).text("Thanks for your message! I will reply shortly.");
