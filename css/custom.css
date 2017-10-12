@@ -13,18 +13,18 @@
 
 #about img {
     width: 357px;
-    min-height: 100px;
+    min-height: 150px;
     max-height: 357px;
 }
 
 #portfolio img {
     width: 1200px;
-    min-height: 100px;
+    min-height: 150px;
     max-height: 547px;
 }
 
 #customers img {
     width: 167px;
-    min-height: 100px;
+    min-height: 150px;
     max-height: 167px;
 }
