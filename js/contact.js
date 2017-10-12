@@ -39,6 +39,7 @@ $(() => {
                 $("#name").val("");
                 $("#compname").val("");
                 $("#email").val("");
+                $("#phone").val("");
                 $("#message").val("");
             })
             .fail((data) => {
